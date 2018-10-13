@@ -1,6 +1,18 @@
 # Changelog
 
-## 7.6.3 (git master)
+## 7.7.1 (git master)
+
+## 7.7.0 (12/10/2018)
+* Add support for reading the Synchro Scheduler SP files.
+* Add support for reading the activity code (ID) from Asta files.
+* When reading a Phoenix file, set the project's status date to the data date from the storepoint.
+* Handle MSPDI files with timephased assignments that don't specify a start and end date.
+
+## 7.6.3 (04/10/2018)
+* Add support for reading Remaining Early Start and Remaining Early Finish task attributes from P6. (Contributed by forenpm)
+* Add support for reading Retained Logic and Progressive Override project attributes from P6. (Contributed by forenpm)
+* Fix incorrect sign when calculating start and finish slack (Contributed by Brian Leach).
+* Correctly read predecessors and successors from Phoenix files.
 
 ## 7.6.2 (30/08/2018)
 * Add support for nvarchar columns when reading from a P6 database.
